@@ -1,0 +1,236 @@
+#categories-info{
+    padding: 40px;
+    .all-categories{
+        width: 80%;
+        margin: auto;
+        ul{
+            li{
+                margin-right: 20px;
+                position: relative;
+                &::before{
+                    content: '';
+                    position: absolute;
+                    top: 0%;
+                    left: 100%;
+                    width: 1px;
+                    height:100%;
+                    margin-left: 10px;
+                    background-color: $light-grey;
+                }
+                a{
+                    color: #000;
+                    text-transform: uppercase;
+                }
+            }
+
+        }
+        @media(max-width:576px){
+            display: none;
+        }
+    }
+    .photo{
+        width: 100%;
+        height: 500px;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    @media(max-width:576px){
+        .photo{
+            width: 100%;
+            height: 150px;
+            margin-top: 20px;
+        }
+    }
+}
+#content-main{
+    .left{
+        
+        background-color: $background-grey;
+        padding: 15px;
+        position: relative;
+        &::before{
+            content: '';
+            background-color: $light-grey;
+            position: absolute;
+            top: 6%;
+            left: 0%;
+            height: 1px;
+            width: 100%;
+           
+            
+        }
+        .categories{
+           
+            .main-head-text{
+                
+                p{
+                    text-transform: uppercase;
+                    color: $text-black;
+                }
+                i{
+                    display: none;
+                }
+            }
+            .all-categories-content{
+                .main-ul{
+                    .main-li{
+                        padding-top: 10px;
+                        a{
+                            color: $text-black;
+
+                        }
+                       li{
+                        width: 80%;
+                        margin: auto;
+                        margin-top: 3px;
+                       }
+                    }
+                }
+                transition: .5s ease;
+                
+                
+            }
+        }
+        
+    }
+    .right{
+       
+       
+        position: relative;
+        width: 96%;
+        margin: auto;
+        
+        .main-box{
+            background-color: $background-grey;
+            padding: 10px 15px;
+            position: relative;
+            &::before{
+                content: '';
+                position: absolute;
+                top: 4.5%;
+                left: 0%;
+                width: 100%;
+                height: 1px;
+                background-color: $light-grey;
+            }
+            .main-head-text{
+     
+                text-transform: uppercase;
+                color: $text-black;
+            }
+            .all-boxes{
+      
+              margin-top: 50px;
+                .box{
+                    height: 500px;
+                    cursor: pointer;
+                    .box-img{
+                        width: 100%;
+                        height: 50%;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    .box-text{
+                        text-align: center;
+                        margin-top: 10px;
+                        h4{
+                            font-size: 12px;
+                        color: $dark-blue;
+                        }
+                        h6{
+                            font-size: 12px;
+                            color: $text-black;
+                        }
+                        P{
+                            margin-top: 40px;
+                            color: $text-black;
+                            font-size: 12px;
+                        }
+                        .price{
+                            font-size: 12px;
+                            color: $text-black;
+                            margin: auto;
+                            span{
+                                color: $dark-blue;
+                            }
+                        }
+                        a{
+                            color: $dark-blue;
+                            font-size: 12px;
+                            font-weight: 600;
+                            margin-top: 5px;
+                        }
+                    }
+                }
+    
+            }
+           
+        }
+        .seller{
+            margin-top: 50px;
+           
+            }
+            .next{
+                margin-top: 50px;
+                &::before{
+                    content: '';
+                    position: absolute;
+                    top: 8%;
+                    left: 0%;
+                    width: 100%;
+                    height: 1px;
+                    background-color: $light-grey;
+                }
+                .box-img{
+                    position: relative;
+                    .box-img-text{
+                        background-color: red;
+                        text-transform: uppercase;
+                        width: 180px;
+                        height: 30px;
+                        text-align: center;
+                        transform: rotate(90deg);
+                        position: absolute;
+                        top: 42%;
+                        right:40%;
+                        p{
+                            font-size: 20px;
+                        color: #fff;
+                        }
+                        
+                        
+                    }
+                }
+            }
+ }
+ @media(max-width:576px){
+    .left{
+        
+        .categories{
+            .all-categories-content{
+             display: none;
+              &.activeCat{
+                display: inline-block;
+            }
+            }
+            .main-head-text{
+                i{
+                    display: inline-block;
+                }
+            }
+           
+        }
+    }
+    .right{
+        margin-top: 50px;
+        
+    }
+ }
+       
+}
+       
+    

@@ -1,0 +1,186 @@
+#header{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    background-color: $background-grey;
+    .up-header{
+        position: relative;
+        .left{
+            p{
+                font-size: 16px;
+                color: #000;
+            }
+        }
+        .right{
+            .ico{
+                width: 25px;
+                height: 25px;
+                border: none;
+                border-radius: 50%;
+                margin-right: 5px;
+                position: relative;
+            
+                i{
+                    color: #fff;
+                    position: absolute;
+                    left: 23%;
+                    top: 20%;
+                    cursor: pointer;
+                    
+                   }
+            }
+            .fb{
+               background-color: #4267b2;
+              
+            }
+            .tw{
+                background-color: #1da1f2;
+            }
+            .ins{
+                background-color: #c13584;
+            }
+            
+        }
+       
+       
+    }
+    .down-header{
+        padding-top: 30px;
+       
+        .left{
+            width: 100px;
+            height: 50px;
+            img{
+                width: 100%;
+                height: 100%;
+
+            }
+           
+        }
+        .middle{
+            input{
+                width: 350px;
+                border:none;
+                border: 1px solid $light-grey; 
+            }
+            i{
+                position: absolute;
+                left: 35%;
+                top: 60%;
+                color: #5e5e5e;
+            }
+           
+        }
+        .right{
+            position: relative;
+            a{
+               
+                text-transform: uppercase;
+                font-size: 18px;
+                font-weight: 600;
+            }
+            .left{
+                margin-right: 20px;
+                a{
+                    color: $dark-blue;
+                    position: relative;
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        top: 100%;
+                        left: 0%;
+                        width: 100%;
+                        height: 1px;
+                        background-color: $dark-blue;
+                    }
+                }
+            }
+            .right{
+               a{
+                color: #fff;
+                background-color: $dark-blue;
+                padding: 10px 15px;
+                border-radius: 10px;
+               }
+               
+            }
+            .bar-menu-ico{
+                display: none;
+               
+            }
+            .bar-menu{
+                background-color: #fff;
+                border-radius: 3px;
+                position: absolute;
+                top: 100%;
+                right: 0%;
+                margin-top: 20px;
+                text-align: center;
+                ul{
+                    li{
+                        a{
+                            color: $dark-blue;
+                            font-size: 12px;
+                            
+
+                        }
+                    }
+                }
+                opacity: 0;
+                visibility: hidden;
+                transition: .5s ease;
+                z-index: 1;
+                &.activeBar{
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+           
+            
+        }
+    }
+    &::before{
+        content:'';
+        position: absolute;
+        top: 45%;
+        left: 0%;
+        background-color: $light-grey;
+        width: 100%;
+        height: 1px;
+    }
+    @media(max-width:576px){
+        .down-header{
+            height: 50px;
+            .left{
+                width: 70px;
+                height: 35px;
+            }
+               .middle{
+                 @media(max-width:576px){
+                input{
+                    width: 180px;
+                    height: 20px;
+                }
+                i{
+                    top:73%;
+                    left: 36%;
+                    font-size: 14px;
+                }
+            }
+               }
+             .right{
+                .left{
+                    display: none;
+                   }
+                   .right{
+                    display: none;
+                   }
+                    .bar-menu-ico{
+                         display: inline-block !important;
+                       
+                    }
+             }
+            
+        }
+    }
+}

@@ -1,0 +1,62 @@
+#bookTime{
+    .all-books{
+        .box{
+            margin-top: 50px;
+            .box-img{
+                width: 80%;
+                height: 300px;
+                img{
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+            .box-text{
+                margin-top: 15px;
+                h5{
+                    font-size: 18px;
+                    font-weight: 600;
+                }
+                h6{
+                    font-size: 16px;
+                    color: $text-black;
+                }
+                p{
+                    font-size: 14px;
+                    color: $text-black;
+                }
+                
+            }
+        }
+    }
+    .advert{
+        background-color:rgb(249, 245, 245);
+        height: 400px;
+         width:80%;
+        margin-top: 50px;
+        text-align: center;
+        p{
+            font-weight: 400;
+            margin-top: 40px;
+            font-size: 36px;
+        }
+        
+        
+    }
+   @media(max-width:576px){
+    .all-books{
+        .box{
+        .box-img{
+            height: 300px;
+            width: 60%;
+            margin: auto;
+        }
+        .box-text{
+            text-align: center;
+        }
+    }
+    }
+    .advert{
+        margin-left: 10%;
+    }
+   }
+}
